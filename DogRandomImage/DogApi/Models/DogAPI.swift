@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 class DogAPI {
+    
 enum Endpoint {
     case randomImageFromAllDogsCollection
     case randomImageForBreed(String)
@@ -15,6 +16,7 @@ enum Endpoint {
     var url: URL {
         return URL(string: self.stringValue)!
     }
+    
     var stringValue: String {
         switch self {
         case .randomImageFromAllDogsCollection:
