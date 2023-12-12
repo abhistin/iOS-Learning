@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DogApi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vb8-uM-NBc">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aEC-DU-O3u">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="216"/>
+                                    </pickerView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Utv-Rv-gAI">
+                                        <rect key="frame" x="0.0" y="216" width="393" height="543"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="543" id="XQS-fW-GmB"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vb8-uM-NBc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DAx-Lb-q3z"/>
+                            <constraint firstItem="vb8-uM-NBc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bYX-Am-INe"/>
+                            <constraint firstItem="vb8-uM-NBc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="egl-HR-8Ul"/>
+                            <constraint firstItem="vb8-uM-NBc" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jqa-s1-tCi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dogImageView" destination="Utv-Rv-gAI" id="1ME-1H-tf7"/>
+                        <outlet property="pickerView" destination="aEC-DU-O3u" id="MlV-C8-hBl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
